@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-dream-app';
+  name = "Anthony Rivas Ch.";
+  email = "arivasc@unsa.edu.pe";
+  webpage = "http://www.unsa.edu.pe";
 }
