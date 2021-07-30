@@ -32,4 +32,7 @@ export class AppComponent {
     hobby.value = "";
     return false;
   }
+  sayHello() {
+    alert("Hola Desde app.component");
+  }
 }
