@@ -3,7 +3,7 @@
 <div class="black">
   <h1> {{ title }} </h1>
 </div>
-<div class="ash">
+<!--div class="ash">
   <h2> {{ name }} </h2>
   <h2> {{ email }} </h2>
   <button (click)="toggleHobbies()" class="btn">Mostrar Hobbies</button>
@@ -40,7 +40,7 @@
   <li *ngFor="let user of users">
     {{ user }} <button (click)="deleteUser(user)">Borrar Usuario</button>
   </li>
-</ul>
+</ul-->
 <div>
   <form>
     <input type="text" name="fullName" [(ngModel)]="fullName">
@@ -48,4 +48,8 @@
   </form>
   <h2>Name: {{ fullName }}</h2>
   <h2>Age: {{ age }}</h2>
+</div>
+<div class="ash" *ngFor="let post of posts">
+  <h2>{{ post.title }}</h2>
+  <h3>{{ post.body }}</h3>
 </div>

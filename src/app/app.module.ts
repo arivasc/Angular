@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { UserComponent } from './user/user.component';
 import { FormsModule } from '@angular/forms';
+import { DataService } from './data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,8 +19,9 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
