@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  fullName : string = "Anthony Rivas";
+  age : number = 25;
   users = ['ryan','joe','cameron','john'];
   activated = false;
 
